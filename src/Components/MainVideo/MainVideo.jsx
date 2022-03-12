@@ -7,7 +7,7 @@ const MainVideo = (props) => {
     const { title, coverImage, titleImage, releaseYear, mpaRating, category, duration, description } = props;
 
     return (
-        <div className={'MainVideo'} style={{ backgroundImage: `url(images/${coverImage})`}}>
+        <div className={'MainVideo'} style={{ backgroundImage: coverImage ? `url(images/${coverImage})` : ''}}>
             <div className={'MainVideo__content'}>
                 <div className={'MainVideo__category'}>{category}</div>
                 {titleImage ?

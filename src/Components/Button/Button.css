@@ -16,9 +16,19 @@
     transition: .3s;
 }
 
+.Button:hover {
+    background-color: #CCC;
+    transform: scale(1.05);
+}
+
 .Button_primary {
-    background-color: blue;
+    background: rgba(35,37,232,1);
+    background: linear-gradient(128deg, rgba(35,37,232,1) 0%, rgba(4,24,126,1) 100%);
     color: white;
+}
+
+.Button_primary:hover {
+    background: linear-gradient(128deg, rgba(4,24,126,1) 0%, rgba(4,24,126,1) 100%);
 }
 
 .Button:active {
