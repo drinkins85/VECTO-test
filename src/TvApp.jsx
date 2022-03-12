@@ -1,5 +1,6 @@
 import React from 'react';
 import MainVideo from './Components/MainVideo/MainVideo';
+import Menu from './Components/Menu/Menu';
 import { minutesToHours } from './helpers'
 
 import './TvApp.css';
@@ -17,7 +18,9 @@ import './TvApp.css';
 export default function TvApp () {
     return (
         <div className={'TvApp'}>
-            <div className={'TvApp__menu'}>menu</div>
+            <div className={'TvApp__menu'}>
+                <Menu />
+            </div>
             <div className={'TvApp__content'}>
                 <div className={'TvApp__main'}>
                     <MainVideo

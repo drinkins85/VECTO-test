@@ -1,0 +1,151 @@
+.Menu {
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: relative;
+}
+
+.Menu:before {
+    content: '';
+    position: absolute;
+    width: 800px;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(0,212,255,0) 100%);
+    left: -800px;
+    top: 0;
+    transition: .4s;
+    pointer-events: none;
+}
+
+.Menu__profile {
+    min-height: 90px;
+    z-index: 2;
+    width: 380px;
+    margin-left: -380px;
+    transition: .4s;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.Menu__nav {
+    flex-grow: 10;
+    z-index: 2;
+}
+
+.Menu__item {
+    list-style: none;
+    background-repeat: no-repeat;
+    background-position: 26px 50%;
+    background-size: 28px;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    transition: .4s;
+    cursor: pointer;
+    overflow: hidden;
+    user-select: none;
+}
+
+.Menu__item:active {
+    transform: scale(.9);
+}
+
+.Menu__item_type_search {
+    background-image: url("../../assets/images/search.png");
+}
+
+.Menu__item_type_home {
+    background-image: url("../../assets/images/home.png");
+}
+
+.Menu__item_type_tv-shows {
+    background-image: url("../../assets/images/tv-shows.png");
+}
+
+.Menu__item_type_movies {
+    background-image: url("../../assets/images/movies.png");
+}
+
+.Menu__item_type_genres {
+    background-image: url("../../assets/images/genres.png");
+}
+
+.Menu__item_type_watch-later {
+    background-image: url("../../assets/images/watch-later.png");
+}
+
+.Menu__item span {
+    line-height: 80px;
+    height: 80px;
+    font-size: 24px;
+    display: inline-block;
+    padding-left: 80px;
+    margin-left: -380px;
+    transition: .4s;
+    opacity: 0;
+}
+
+.Menu__item_active {
+    background-color: #2c395f;
+    font-weight: bold;
+}
+
+.Menu__item:hover {
+    background-color: #1d2847;
+}
+
+.Menu:hover {
+    width: 380px;
+}
+
+.Menu:hover .Menu__item {
+    width: 310px;
+    border-radius: 10px;
+}
+
+.Menu:hover .Menu__secondary-item {
+    margin-left: 0;
+}
+
+.Menu:hover .Menu__profile {
+    margin-left: 0;
+}
+
+.Menu:hover .Menu__item span {
+    margin-left: 0;
+    opacity: 1;
+}
+
+.Menu:hover:before {
+    left: 0;
+}
+
+.Menu__additional {
+    z-index: 2;
+    padding-bottom: 20px;
+}
+
+.Menu__secondary-item {
+    color: #CCCCCC;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 5px;
+    width: 380px;
+    margin-left: -380px;
+    transition: .4s;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.Menu__secondary-item:hover {
+    color: white;
+}
+
+.Menu__secondary-item:active {
+    transform: scale(.9);
+}

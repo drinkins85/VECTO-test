@@ -24,13 +24,6 @@ module.exports = {
                     'css-loader',
                 ]
             },
-            {
-                test: /\.(jpg|png|svg)$/,
-                loader: 'file-loader',
-                options: {
-                    name: 'images/[sha512:hash:base64:7].[ext]',
-                },
-            }
         ]
     },
     plugins: [

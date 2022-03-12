@@ -1,0 +1,24 @@
+.UserBadge {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.UserBadge__avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.UserBadge__avatar img {
+    display: block;
+    width: 100%;
+}
+
+.UserBadge__name {
+    font-size: 24px;
+    font-weight: bold;
+}

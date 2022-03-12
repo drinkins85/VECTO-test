@@ -12,9 +12,15 @@
     box-sizing: border-box;
     display: inline-block;
     cursor: pointer;
+    user-select: none;
+    transition: .3s;
 }
 
 .Button_primary {
     background-color: blue;
     color: white;
+}
+
+.Button:active {
+    transform: scale(.9);
 }
