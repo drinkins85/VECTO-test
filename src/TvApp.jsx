@@ -57,7 +57,6 @@ export default function TvApp () {
 
     const { Title, CoverImage, TitleImage, ReleaseYear, MpaRating, Category, Duration, Description } = featured;
 
-
     const handleTrendClick = (id) => {
         setFeaturedVideoId(id);
         window.sessionStorage.setItem('lastSelectedVideo', id);
