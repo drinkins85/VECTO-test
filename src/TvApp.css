@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.TvApp {
+    background-color: black;
+    height: 100vh;
+    overflow: auto;
+}
+
+.TvApp__menu {
+    position: absolute;
+    width: 154px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.TvApp__content {
+    padding-left: 154px;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.TvApp__main {
+    flex-grow: 10;
+}
+
+.TvApp__trends {
+    min-height: 200px;
+}

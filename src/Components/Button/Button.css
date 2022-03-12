@@ -1,0 +1,20 @@
+.Button {
+    background-color: white;
+    border-radius: 24px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: inherit;
+    padding: 0 20px;
+    min-width: 160px;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.Button_primary {
+    background-color: blue;
+    color: white;
+}
