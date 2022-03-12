@@ -1,7 +1,18 @@
 .Trends {
+    margin-top: -20px;
+}
+
+.Trends__list {
     display: flex;
     overflow-y: hidden;
     overflow-x: auto;
+    position: relative;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.Trends__list::-webkit-scrollbar {
+    display: none;
 }
 
 .Trends__item {
@@ -17,5 +28,11 @@
 }
 
 .Trends__image:hover {
-    transform: scale(1.1);
+    transform: scale(1.01);
+    opacity: .8;
+}
+
+.Trends__title {
+    font-size: 24px;
+    color: white;
 }
